@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <meta charset="utf-8" />
+        <meta name="keywords" content />
+        <meta name="description" content />
+        <meta name="author" content />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <!-- BOOTSTRAP CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+        <!-- LOCAL MAIN CSS-->
+        <link rel="stylesheet" href="./main.css">
+        <!-- BOOTSTRAP ICONS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="./style.css">
+
+        <script src="https://kit.fontawesome.com/3b89d9192b.js"
+            crossorigin="anonymous"></script>
+
+    </head>
+    <body style="background-color:#fcd232">
+
+        <nav class="navbar navbar-expand-lg custom-bg-primary">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/logo.webp" alt="logo"
+                        style="width: 60px;">
+                </a>
+
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+
+                    <ul
+                        class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 SMN_effect-24">
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page"
+                                href="https://brainster.co/marketing/"
+                                target="_blank" rel="noopener">Академија за
+                                маркетинг</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold"
+                                href="https://brainster.co/front-end/"
+                                target="_blank" rel="noopener">Академија за
+                                програмирање</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold"
+                                href="https://brainster.co/data-science/"
+                                target="_blank" rel="noopener">Академија за data
+                                science</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold"
+                                href="https://brainster.co/graphic-design/"
+                                target="_blank" rel="noopener">Академија за
+                                дизајн</a>
+                        </li>
+                    </ul>
+
+                    <a
+                        class="btn custom-bg-secondary custom-btn-hover text-white fw-bold border-0 shadow-none me-3"
+                        href="./form.html"> Вработи наш студент</a>
+                </div>
+
+                <button class="btn btn-outline-dark d-lg-none" type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive"
+                    aria-controls="offcanvasResponsive"><i
+                        class="fa-solid fa-bars fa-2x"></i></button>
+
+                <div class="offcanvas-lg offcanvas-end text-bg-dark"
+                    tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body d-lg-none">
+
+                        <ul
+                            class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 SMN_effect-24">
+
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link text-white fw-bold "
+                                    href="https://brainster.co/marketing/%22%3E%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%98%D0%B0"
+                                    target="_blank" rel="noopener">Академија за
+                                    маркетинг</a>
+                            </li>
+
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link text-white fw-bold "
+                                    href="https://brainster.co/front-end/%22%3E%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%98%D0%B0"
+                                    target="_blank" rel="noopener">Академија за
+                                    програмирање</a>
+                            </li>
+
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link text-white fw-bold "
+                                    href="https://brainster.co/data-science/%22%3E%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%98%D0%B0"
+                                    target="_blank" rel="noopener">Академија за
+                                    data science</a>
+                            </li>
+
+                            <li class="nav-item me-lg-3">
+                                <a class="nav-link text-white fw-bold "
+                                    href="https://brainster.co/graphic-design/%22%3E%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%98%D0%B0"
+                                    target="_blank" rel="noopener">Академија за
+                                    дизајн</a>
+                            </li>
+
+                        </ul>
+
+                        <a
+                            class="btn custom-bg-secondary btn-hover text-white fw-bold border-0 shadow-none me-3"
+                            href="./form.html"> Вработи наш студент</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div class="custom-bg-primary">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center pt-5 pb-5">
+                        <h1 class="fw-bold display-2">Вработи студенти</h1>
+                    </div>
+                </div>
+                <form id="form">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 form-item">
+                            <label for="name" class="fw-bold">
+                                Име и презиме
+                            </label>
+                            <input type="text"
+                                class="form-control custom-box-shadow" id="name"
+                                style="font-style:italic"
+                                placeholder="Внеси име и презиме"
+                                name="name">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <small>Error message</small>
+
+                        </div>
+                        <div class="col-12 col-sm-6 form-item">
+                            <label for="company-name" class="fw-bold">
+                                Внеси име на компанија
+                            </label>
+                            <input type="text"
+                                class="form-control custom-box-shadow"
+                                id="companyName" style="font-style:italic"
+                                placeholder="Внеси име на компанија"
+                                name="company-name">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="col-12 col-sm-6 form-item">
+                            <label for="email" class="fw-bold">
+                                Контакт имејл
+                            </label>
+                            <input type="email"
+                                class="form-control custom-box-shadow"
+                                id="email"
+                                style="font-style:italic"
+                                placeholder="Контакт имајл на вашата компанија"
+                                name="email">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <small>Error message</small>
+                        </div>
+
+                        <div class="col-12 col-sm-6 form-item">
+                            <label for="company-number" class="fw-bold ">
+                                Контакт телефон
+                            </label>
+                            <input type="text"
+                                class="form-control custom-box-shadow"
+                                id="phoneNumber" style="font-style:italic"
+                                placeholder="Контакт телефон на вашата компанија"
+                                name="company-number">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="col-12 col-sm-6 form-item dropdownDiv">
+                            <label for="#" class="fw-bold">Тип на студенти</label>
+                            <div class="dropdown" id="dropdown">
+                                <input type="text" class="textBox form-control"
+                                    placeholder="Избери тип на студент"
+                                    id="selectOption" value="Избери тип на студент" readonly/>
+                                    <small class="selectError">Error message</small>
+                                <div class="option" id="option">
+                                    <div class="p-2 hr" id="htmlOption"><option value="1">Студенти од маркетинг</option></div>
+                                    <div class="p-2 hr" id="cssOption"><option value="2">Студенти од програмирање</option></div>
+                                    <div class="p-2 hr" id="jsOption"><option value="3">Студенти од data science</option></div>
+                                    <div class="p-2 hr" id="reactOption"><option value="4">Студенти од дизајн</option></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-sm-6 align-self-center form-item"
+                            id="button">
+                            <label for></label>
+                            <button
+                                class="btn custom-bg-secondary text-white w-100 custom-btn-hover fw-bold custom-box-shadow"
+                                type="submit">ИСПРАТИ</button>
+                        </div>
+
+                    </div>
+                </form>
+
+                <div id="snackbar">Успешно ја потполнивте формата</div>
+            </div>
+        </div>
+
+        <script src="./form.js"></script>
+        <!-- POPPER JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+
+        <!-- BOOTSTRAP JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

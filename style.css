@@ -1,0 +1,311 @@
+.banner{
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/background.webp);
+}
+
+.text-animation {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+/* colors */
+.custom-bg-primary{
+    background-color: #fcd232;
+}
+
+.custom-bg-secondary{
+    background-color: #ff1300;
+}
+
+.custom-bg-tertiary{
+    background-color: #302f38;
+}
+.logo{
+    width: 70px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+
+
+
+.SMN_effect-24 a {
+	padding: 10px 20px;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	-webkit-transition: 0.3s ease-out;
+	-moz-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
+
+.SMN_effect-24 a span:before {
+	width: 5px;
+	height: 5px;
+	background: transparent;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-top: 2px solid #ff1300;
+	border-left: 2px solid #ff1300;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.SMN_effect-24 a span:after {
+	width: 6px;
+	height: 6px;
+	background: transparent;
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-right: 2px solid #ff1300;
+	border-bottom: 2px solid #ff1300;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.SMN_effect-24 a:before {
+	width: 6px;
+	height: 6px;
+	background: transparent;
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-right: 2px solid #ff1300;
+	border-top: 2px solid #ff1300;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.SMN_effect-24 a:after {
+	width: 6px;
+	height: 6px;
+	background: transparent;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-left: 2px solid #ff1300;
+	border-bottom: 2px solid #ff1300;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.SMN_effect-24 a:hover {
+	color: #ff1300;
+}
+
+.SMN_effect-24 a:hover:before {
+	opacity: 1;
+	right: 5px;
+	top: 5px;
+}
+
+.SMN_effect-24 a:hover:after {
+	opacity: 1;
+	left: 5px;
+	bottom: 5px;
+}
+
+.zoom {
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.05); 
+  }
+
+  .custom-btn-hover:hover{
+    background-color: #c60f00;
+  }
+
+  .custom-title-size{
+    max-width: fit-content;
+
+  }
+
+.dropdown{
+	position: relative;
+}
+.dropdown::before{
+	content:  '';
+	position: absolute;
+	right: 20px;
+	top: 12px;
+	z-index: 1000;
+	width: 8px;
+	height: 8px;
+	border: 2px solid black;
+	border-top:  2px solid white;
+	border-right:  2px solid white;
+	transform: rotate(-45deg);
+	transition: 0.5s;
+	pointer-events: none;
+}
+.dropdown.active::before{
+	top: 17px;
+	transform: rotate(-225deg);
+}
+.dropdown input{
+	width: 100%;
+	cursor: pointer;
+	background-color: white;
+	border: none;
+	outline: none;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	margin-bottom: 200px;
+}
+.dropdown .option{
+	position: absolute;
+	top: 65px;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	overflow: hidden;
+	display: none; 
+}
+.dropdown .option:first-child{
+	margin-top: 50px;
+}
+.dropdown.active .option{
+	display: block;
+}
+.dropdown .option div{
+	cursor: pointer;
+}
+.dropdown .option div:hover{
+	background-color: #62baea;
+	color: white;
+}
+
+.hr{
+	border-bottom: 1px solid lightgray;
+}
+
+.custom-box-shadow{
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-item{
+	position: relative;
+}
+.form-item i {
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+.form-item.success i.fa-circle-check{
+	visibility: visible;
+	color: green;
+}
+.form-item.error i.fa-circle-exclamation{
+	visibility: visible;
+	color: #ED4337;
+}
+.form-item small{
+	visibility: hidden;
+}
+.form-item.error small{
+	visibility: visible;
+	color: #ED4337;
+}
+.form-item.success input {
+	border: 2px solid green;
+}
+.form-item.error input {
+	border: 2px solid #ED4337;
+}
+
+.dropdownDiv .selectError{
+	position: absolute;
+	top: 43px;
+}
+
+#loadMore{
+	background-color: #ED4337;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	justify-content: center;
+	width: 100%;
+}
+
+@media (min-width: 570px){
+	.dropdown input{
+		margin-bottom: 0;
+	}
+}
+
+
+#snackbar {
+	visibility: hidden;
+	min-width: 300px;
+	background-color: rgba(0, 128, 0, 0.7);
+	color: #fff;
+	text-align: center; 
+	border-radius: 4px;
+	padding: 16px;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	bottom: 50px;
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+	visibility: visible;
+	/* animation */
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+  }
