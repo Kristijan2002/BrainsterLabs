@@ -4,10 +4,325 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Street Artist</title>
+
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+
         <link rel="stylesheet" href="./style.css">
+
+        <link rel="icon" href="./img/Logo.png">
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://kit.fontawesome.com/3b89d9192b.js"
+            crossorigin="anonymous"></script>
+
     </head>
     <body>
-        <h1>Hello World</h1>
-        <script src="./main.js"></script>
+
+        <section id="landingPage">
+        
+                <nav>
+                    <h1>Street ARTist</h1>
+                </nav>
+                <div class="landingPage wrapper">
+                    <img src="./img/Logo.png" alt="Logo">
+    
+                    <div class="skewed">
+                        <div class="artistWrapper">
+                            <div class="artist" id="artist">
+                                <h1>Join as Artist</h1>
+                                <form>
+                                    <select id="art">
+                                        <option>Choose</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+    
+                        <div class="visitorWrapper">
+                            <div class="visitor" id="visitor">
+                                <h1>Join as Visitor</h1>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+
+        <section id="visitorHomePage">
+                <nav>
+                    <img src="./img/Logo.png" alt="logo" class="logo">
+                    <h1>Street ARTist</h1>
+                    <img src="./img/auctionHummer.png" alt="hummerLogo"
+                        class="hummer" id="hummerBtn">
+                </nav>
+                <div class="wrapper">
+                    <div class="bricks"><img src="./img/Bricks.png" alt="bricks">
+                        <div class="bricksText">
+                            <div><h1>Looking for masterpiece?</h1></div>
+                            <div><button id="findOneMoreBtn">Find one now!</button></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    
+                <div class="sliderBox">
+                </div>
+            
+               
+            
+                <div id="carouselExampleControls" class="carousel slide displayCarousel" data-bs-ride="carousel">
+                    <div class="carousel-inner carouselMyClass">
+                      <div class="carousel-item active">
+                        <div class="carouselBox">
+                            <div class="leftCard">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis. <div class="circleImg"><img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2080" alt=""></div></div>
+                            <div class="line"></div>
+                            <div class="rightCard">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</div>
+        
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carouselBox">
+                            <div class="leftCard">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis. <div class="circleImg"><img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2080" alt=""></div></div>
+                            <div class="line"></div>
+                            <div class="rightCard">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</div>
+        
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carouselBox">
+                            <div class="leftCard">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis. <div class="circleImg"><img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2080" alt=""></div></div>
+                            <div class="line"></div>
+                            <div class="rightCard">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</div>
+        
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control" aria-hidden="true"><img src="./img/leftArrow.png" alt="prev" class="prevBtn"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control" aria-hidden="true"><img src="./img/rightArrow.png" alt="next" class="nextBtn"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    
+                  </div>
+
+        </section>
+    
+
+
+        <section id="visitorListing"> 
+             <nav>
+            <img src="./img/Logo.png" alt="logo" class="logo" id="logo">
+            <h1>Street ARTist</h1>
+            <img src="./img/auctionHummer.png" alt="hummerLogo"
+                class="hummer">
+        </nav>
+            <div id="visiotItemsBox"></div>
+            <img src="./img/filterLogo.png" alt="filter" id="filterBtn" class="filterBtn">
+            <div class="filter" id="filterDiv">
+                <div class="headerDiv">
+                    <h1>Filter by</h1>
+                    <img src="./img/x.png" alt="x" id="exitBtn">
+                </div>
+                <div>
+                    <label for="">By Item Title</label>
+                    <input type="text" placeholder="Item Title" id="filterItemTitle">
+                </div>
+
+                <div>
+                    <label for="artOptions">By Artist</label>
+                    <select name="artOptions" id="artOptions">
+                        <option value="choose">Choose</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>By Price</label>
+                    <div class="priceDiv">
+                        <div>
+                            <label for="minPrice">Min:</label>
+                            <input type="number" name="minPrice" id="minPriceInput" placeholder="Price">
+                        </div>
+                        <div>
+                            <label for="maxPrice">Max:</label>
+                            <input type="number" name="maxPrice" id="maxPriceInput" placeholder="Price">
+                        </div>
+                    </div>
+                    
+
+                    <label for="typeOptions">By Type</label>
+                    <select name="typeOptions" id="typeOptions">
+                        <option value="choose">Choose</option>
+                    </select>
+                </div>
+
+                <img src="./img/confirmFilter.png" alt="confirmFilter" id="confirmFilterBtn">
+            </div>
+        </section>
+
+
+
+        <section id="artistHomePage">
+            <nav class="artNav">
+            <img src="./img/Logo.png" alt="Logo" class="logo" id="logo2">
+            <h1 id="artistName"></h1>
+            <img src="./img/burgerMenu.png" alt="BurgerMenu" class="burgerMenu">
+            <div class="dropDown">
+                <p id="homeNavigator">Home</p>
+                <p id="itemsNavigator">Items</p>
+                <p id="auctionNavigator">Auction</p></div>
+        </nav>
+        <div class="row">
+            <div class="col">
+                <p>Total Items Sold</p>
+                <h2 id="totalItemsSold"></h2>
+            </div>
+            <div class="col">
+                <p>Total Income</p>
+                <h2 id="totalIncome"></h2>
+            </div>
+        </div>
+        <div class="rowTwo">
+                <p>Live Auctioning Item</p>
+                <h2>$1200</h2>
+                <p>current bid</p>
+        </div>
+        <div class="chart">
+        <p>Display my income for last</p>
+            <div class="row">
+            <div class="col-30"><p id="sevenDays">7 days</p></div>
+            <div class="col-30 selected"><p id="fourteenDays">14 days</p></div>
+            <div class="col-30"><p id="thirtyDays">30 days</p></div>
+            </div>
+        </div></h1>
+        <canvas id="myChart" style="height: 60vh;"></canvas>
+    </section>
+
+
+
+        <section id="artistItemsPage">
+        <nav class="artNav">
+            <img src="./img/Logo.png" alt="Logo" class="logo3">
+            <h1 id="artistNameListPage"></h1>
+            <img src="./img/burgerMenu.png" alt="BurgerMenu" class="burgerMenu" id="burgerMenu1">
+            <div class="dropDown1">
+                <p id="homeNavigator1">Home</p>
+                <p id="itemsNavigator1">Items</p>
+                <p id="auctionNavigator1">Auction</p></div>
+        </nav>
+        <div id="addNewItem">
+            <span><p>+Add new Item</p></span>
+        </div>
+
+       <div id="artistItemsBox">
+       </div>
+        </section>
+
+
+
+        <section id="artistAddNewItem">
+            <nav class="artNav">
+                <img src="./img/Logo.png" alt="Logo" class="logo2">
+                <h1 id="artistNameAddNewItem"></h1>
+                <img src="./img/burgerMenu.png" alt="BurgerMenu" class="burgerMenu2">
+                <div class="dropDown2">
+                    <p id="homeNavigator2">Home</p>
+                    <p id="itemsNavigator2">Items</p>
+                    <p id="auctionNavigator2">Auction</p></div>
+            </nav>
+            <form id="addNewItemForm">
+                <div class="header">
+                    <h1>Add new Item</h1>
+                    <div>
+                        <label for="isPublished">is Published
+                        </label>
+                        <input type="checkbox" name="isPublished" id="inputCheckbox">
+
+                    </div>
+                </div>
+                <span>
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="inputTitle">
+                </span>
+                <span>
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description"></textarea>
+                </span>
+                <div>
+                    <span>
+                        <label for="type">Type</label>
+                        <input type="text" name="type" id="inputType">
+                    </span>
+                    <span>
+                        <label for="price">Price</label>
+                        <input type="text" name="price" id="inputPrice">
+                    </span>
+                </div>
+
+                <span>
+                    <label for="imgUrl">Image URL</label>
+                    <input type="text" name="imgUrl" id="inputImgUrl">
+                </span>
+                <span>
+                    <label for="" class="orText">or</label>
+                    <canvas class="takeSnapshot" id="takeSnapshotBtn">
+                        <video id="videoElement" autoplay></video>
+                        <img src="./img/camera.png" alt="camera" class="camera">
+                        <p class="cameraText">Take a snapshot</p>
+                    </canvas>
+                    <button id="takePhoto">Take a Photo</button>
+                </span>
+                <div class="btnsDiv">
+                    <button class="addNewItemBtn">Add New Item</button>
+                    <button class="save">Save</button>
+                    <button class="cancelBtn" id="cancelBtn">Cancel</button>
+                </div>
+            </form>
+        </section>
+
+
+
+        <section id="auction">
+            <nav class="auctionNav">
+                <img src="./img/Logo.png" alt="logo" class="logo">
+                <h1 class="auctionH1">Auction</h1>
+            </nav>
+            <div class="auctionCardDiv">
+            </div>
+
+            
+        </section>
+
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script src="./data/data.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/landingPage.js"></script>
+        <script src="./js/visitorHomePage.js"></script>
+        <script src="./js/artistHomePage.js"></script>
+        <script src="./js/visitorListing.js"></script>
+        <script src="./js/artistItemsPage.js"></script>
+        <script src="./js/artistAddNewItem.js"></script>
+        <script src="./js/auction.js"></script>
     </body>
 </html>

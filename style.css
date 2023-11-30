@@ -1,0 +1,733 @@
+ @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@500&display=swap');
+
+ body{
+     margin: 0;
+     padding: 0;
+     background-color: #FCEBD5;
+    }
+
+#landingPage, #visitorHomePage, #visitorListing, #artistHomePage, #artistItemsPage, #artistAddNewItem, #auction{
+    height: 100vh;
+    width: 425px;
+    margin: 0 auto;
+}
+#visitorListing{
+    background-color: #EDD5BB;
+}
+
+
+nav h1, .skewed h1{
+    margin: 0 auto;
+    color: #A16A5E;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: 200;
+    font-size: 30px;
+    }
+.wrapper{
+    width: 100%;
+    display: flex;
+}
+.landingPage{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: #FCEBD5;
+    height: 69px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.35);
+    font-size: 30px;
+}
+nav img{
+    z-index: 50;
+}
+
+.landingPage img{
+    margin: 0 auto;
+}
+
+.skewed {
+    width: 90%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto;
+}
+
+.artist, .visitor {
+    width: 65%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.artistWrapper, .visitorWrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.artist {
+    top: 0;
+    background-color: #EDD5BB;
+    ; 
+    clip-path: polygon(0 0, 100% 0%, 100% 60%, 0 35%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.artist h1{
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    color: #A16A5E;
+    font-size: 45px;
+}
+.artist select{
+    position: absolute;
+    top: 20%;
+    right: 17%;
+    background-color: transparent;
+    border: 1px solid #A16A5E;
+    border-radius: 4px;
+    color: #A16A5E;
+    padding: 5px 10px;
+}
+
+.visitor:hover, .artist:hover{
+    transform: scale(1.1);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.visitor {
+    position: relative;
+    bottom: 0;
+    background-color: #A16A5E;
+    clip-path: polygon(0 35%, 100% 60%, 100% 100%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visitor h1{
+    position: absolute;
+    bottom: 15%;
+    text-align: center;
+    color: #EDD5BB;
+    font-size: 45px;
+}
+
+#art{
+    width: 38%;
+    right: 8%;
+    margin-top: 20px;
+}
+
+.logo,.logo2, .logo3{
+    width: 104px;
+    height: 104px;
+    margin-top: 20px;
+}
+.hummer{
+    width: 33px;
+    height: 33px;
+    margin: 0 0 0 130px;
+}
+
+.bricks{
+    position: relative;
+    width: 425px;
+}
+.bricks img{
+    width: 100%;
+}
+
+.bricksText{
+    display: flex;    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
+}
+.bricksText h1 {
+    width: 60%;
+    font-family: 'Roboto', cursive;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+    color: #A16A5E;
+}
+.bricksText button {
+    width: 113px;
+    height: 27px;
+    top: 129px;
+    left: 283px;
+    padding:5px 17.5px;
+    border-radius: 2px;
+    gap: 10px;
+    box-shadow: 0px 1px 1px 0px #00000040;
+    background: #A16A5E;
+    color: #FCEBD5;
+    border: none;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    align-items: center;
+}
+
+#visitorHomePage nav h1{
+    margin: 0;
+}
+
+.slider, .slider2{
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 30px;
+    height: 153px;
+}
+.slider .image, .slider2 .image{
+    height: 100%;
+    width: 207px;
+    padding: 0 15px;
+}
+.slide {
+    display: inline-block;
+    vertical-align: top;
+    transition: margin-left .7s ease-in-out;
+    max-width: 207px;
+    height: 153px;
+    padding: 0 15px;
+}
+
+
+.artNav h1{
+    margin-left: 0;
+}
+.burgerMenu, .burgerMenu2, .burgerMenu3{
+    margin-right: 10px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 25px auto 0 auto;
+}
+.col{
+    width: 45%;
+    background-color: #A16A5E;
+    color:#FCEBD5;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 10px;
+}
+.col p{
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 300;
+}
+.col h2{
+    font-size: 48px;
+    margin: 0;
+    padding-bottom: 18px;
+}
+
+
+.rowTwo{
+    width: 95%;
+    margin: 0 auto;
+    background-color:#D44C2E;
+    text-align: center;
+    color:#FCEBD5;
+    margin-top: 25px;
+}
+.rowTwo p{
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 300;
+    margin: 0;
+    padding: 10px 0;
+
+}
+.rowTwo h2{
+    font-size: 48px;
+    margin: 0;
+}
+
+.chart p{
+    margin-left: 18px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #A16A5E;
+    font-family: Roboto;
+}
+
+.col-30{
+    width: 25%;
+    background-color: #A16A5E;
+    text-align: center;
+    font-family: Roboto;
+    border-radius: 2px;
+}
+.selected{
+    background-color: #D44C2E;
+}
+.col-30 p{
+    margin: 10px;
+    color:#FCEBD5;
+    font-size: 12px;
+}
+.artNav{
+    position: relative;
+}
+.dropDown, .dropDown1, .dropDown2, .dropDown3{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #A16A5E;
+    color: #FCEBD5;
+    text-align: center;
+    font-family: Roboto;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#artistItemsPage{
+    background-color: #EDD5BB;
+
+}
+
+#addNewItem{
+    height: 13vh;
+    margin: 20px 0;
+    padding-top: 14px;
+    padding-bottom: 105px;
+    background-color: #FCEBD5;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#addNewItem p{
+    border: 2px dashed #A16A5E;
+    width: 95%;
+    margin: 0 auto;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#A16A5E;
+    font-family: Roboto;
+}
+.sliderBox{
+    background-color: #EDD5BB;
+    padding-bottom: 30px;
+}
+.carouselMyClass{
+ margin-top: 20px;
+}
+.carouselBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.leftCard{
+    background-color: #E09686;
+    font-size: 9px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    width: 106px;
+    height: 111px;
+    position: relative;
+    margin-top: 60px;
+    padding-top: 30px;
+}
+.circleImg{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circleImg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #A16A5E;
+}
+
+.rightCard{
+    width: 106px;
+    height: 174px;
+    font-size: 9px;
+    margin-top: 75px;
+    color: #A16A5E;
+    text-align: center;
+}
+
+.line{
+    border: 1px solid #A16A5E;
+    height: 179px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#carouselButtonPrev, #carouselButtonNext{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#carouselButtonPrev{
+    left: 1%;
+}
+#carouselButtonNext{
+    right: 1%; 
+}
+
+.carouselTrack{
+    list-style-type: none;
+}
+.carouselSlide{
+visibility: hidden;
+}
+
+.currentSlide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    visibility: visible;} 
+
+
+.displayCarousel{
+    display: contents;
+    width: 425px;
+    position: relative;
+}
+.nextBtn{
+    position: relative;
+    right: 10;
+    top: 55%;
+}
+
+
+.cardWrapper{
+    font-family:"Roboto", "sans-serif";
+    margin-bottom: 15px;
+}
+
+.card{
+    box-sizing: border-box;
+    background-color:#FCEBD5; 
+}
+.card img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nameAndPrice{
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    color: #FCEBD5;
+    background-color: #A16A5E;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.itemTitle{
+    font-size: 14px;
+    color: #A16A5E;
+    margin: 0;
+    margin-top: 10px;
+}
+.date{
+    font-size: 9px;
+    color: #A16A5E;
+}
+.desc{
+    font-size: 11px;
+    color: #A16A5E;
+    margin: 0 10px;
+}
+.cardBtns{
+    background-color: #A16A5E;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.cardBtns button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.sendToAuction{
+    background-color: #1B59AC;
+    color: #F8F8F8;
+}
+.onAuction{
+    background-color: gray;
+}
+.publish{
+    background-color: #e5e5e5;
+}
+.unpublish{
+    background-color: #1BAC6F;
+    color: white;
+}
+.remove{
+    background-color: #D44C2E;
+    color: white;
+}
+.edit{
+    background-color: #FCEBD5;
+    color: #A16A5E;
+}
+/* ----------------------------------------------------------------------------------- */
+/* addNewItem style */
+#artistAddNewItem{
+    background-color: #A16A5E;
+}
+form{
+    margin: 0 10px;
+}
+form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form span{
+    display: flex;
+    flex-direction: column;
+    color: #EDD5BB;
+    margin-bottom: 15px;
+}
+form span input{
+    background-color: transparent;
+    border: 1px solid #EDD5BB;
+    color: #EDD5BB;
+}
+form span input:focus{
+   outline: none;
+}
+form textarea{
+    background-color: transparent;
+    border: 1px solid #EDD5BB;
+    color: #EDD5BB;
+}
+form textarea:focus{
+    outline: none;
+}
+.header{
+    color: #FCEBD5;
+    margin-top: 15px;
+}
+.orText{
+    text-align: center;
+    margin:0 0 15px 0;
+}
+.takeSnapshot{
+    border: 2px dashed #EDD5BB;
+    height: 309px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.takeSnapshot img{
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.takeSnapshot video{
+    position: absolute;
+}
+.btnsDiv button{
+    width: 47%;
+    border: none;
+    border-radius: 4px;
+    font-weight:600 ;
+}
+.addNewItemBtn, .save{
+    display: none;
+    color: #FCEBD5;
+    background-color: #D44C2E;
+}
+.cancelBtn{
+    background-color: #E5E5E5;
+}
+/* ----------------------------------------------------------------------- */
+/* visitor listing */
+#itemsBox{
+    padding-top: 30px;
+}
+.itemArtistName{
+    color: #A16A5E;
+    font-family: 'Reenie Beanie', cursive;
+}
+.cardWrapper:nth-child(even){
+    .card{
+        background-color: #A16A5E;
+    }
+    .nameAndPrice .itemTitle, .date, .desc{
+        color: #EDD5BB;
+    }
+    .price{
+        background-color: #EDD5BB;
+        color: #A16A5E;
+    }
+    .itemArtistName{
+        color: #EDD5BB;
+    }
+}
+.filterBtn{
+position: fixed;
+   bottom: 3px;
+   right: 10px;
+}
+#confirmFilterBtn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.filter{
+    position: fixed;
+    top: 69px;
+    width: 425px;
+    background-color: #A16A5E;
+    display: none;
+    padding: 0 15px;
+    height: 93vh;
+}
+
+@keyframes slideLeft {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      left: 0;
+    }
+    to {
+      left: 100%;
+    }
+  }
+ /* visitor listing filter  */
+ .filter div{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #EDD5BB;
+    color: #EDD5BB;
+    padding-bottom: 20px;
+ }
+ .filter div label{
+    margin-bottom: 10px;
+ }
+ .filter div input, select{
+    width: 30%;
+    background-color: transparent;
+    border: 1px solid #EDD5BB;
+    color: #EDD5BB;
+ }
+ .filter div label{
+    padding-top: 30px;
+ }
+ ::placeholder{
+    color: #EDD5BB;
+ }
+.filter h1{
+    color: #FCEBD5;
+    margin-top: 20px;
+}
+.priceDiv{
+    display: flex;
+    flex-direction: row!important;
+ }
+.priceDiv div input{
+    width: 65%;
+}
+.priceDiv div{
+border: none;
+}
+.priceDiv div label{
+    padding: 0;
+}
+.headerDiv{
+    display: flex;
+    flex-direction: row!important;
+    justify-content: space-between;
+    align-items: center;
+    border: none!important;
+}
+.headerDiv img{
+    width: 39px;
+    height: 39px;
+    margin-top: 20px;
+}
+
+
+/* ----------------------------------------------------------------------- */
+.auctionH1{
+    margin-left: 80px;
+}
+.auctionNav{
+    margin-bottom: 20px;
+}
+.biddingPrice, .biddingTimer{
+    color: #A16A5E;
+    text-align: center;
+}
+.bidBtn{
+    width: 45%;
+    background-color: #1BAC6F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.myOffer{
+    background-color: #A16A5E;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+.bidForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bidForm span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ulLists{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
